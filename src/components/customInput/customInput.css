@@ -1,0 +1,54 @@
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --darkGrayishCyan2: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --lightGrayishCyan2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.custom__input__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input__title {
+  color: var(--darkGrayishCyan2);
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.input__container {
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: var(--lightGrayishCyan);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 1em;
+}
+.custom__input {
+  border: none;
+  background: none;
+  text-align: right;
+  color: var(--darkGrayishCyan);
+  font-size: 1.2rem;
+  font-weight: 700;
+  max-width: 100%;
+}
+
+.custom__input:focus {
+  outline: none;
+}
+
+.input__container:focus-within {
+  box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  background-color: var(--lightGrayishCyan2);
+}
+
+.input__icon {
+  height: 1.2rem;
+  margin: auto 0;
+}

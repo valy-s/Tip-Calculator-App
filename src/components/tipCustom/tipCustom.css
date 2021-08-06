@@ -1,0 +1,51 @@
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --darkGrayishCyan2: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --lightGrayishCyan2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.tipCustom__container {
+  background-color: var(--lightGrayishCyan2);
+  margin: 0.5rem 0.5rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkGrayishCyan);
+}
+
+.tipCustom__container:hover {
+  cursor: pointer;
+}
+
+.tipCustom__container:focus-within {
+  box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  background-color: var(--white);
+}
+
+.active {
+  background-color: var(--strongCyan);
+}
+
+.custom__tip__input {
+  width: 90%;
+  margin: auto;
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--darkGrayishCyan);
+  font-weight: 700;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .tipCustom__container {
+    width: 45%;
+  }
+}

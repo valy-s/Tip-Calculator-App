@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --darkGrayishCyan2: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --lightGrayishCyan2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover {
+  cursor: pointer;
+}
+
+.container {
+  background-color: hsl(185, 41%, 84%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__title {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+  color: var(--darkGrayishCyan);
+  margin-bottom: 2rem;
+}
+
+.app__body {
+  background-color: var(--white);
+  width: 60%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+.app__values,
+.app__results {
+  width: 50%;
+}
+
+.app__results {
+  background-color: var(--veryDarkCyan);
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+  .app__title {
+    margin-top: 2rem;
+  }
+  .app__body {
+    width: 100%;
+    height: unset;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .app__title {
+    margin-top: 5rem;
+  }
+  .app__body {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 7.5rem;
+  }
+
+  .app__values,
+  .app__results {
+    width: 100%;
+  }
+}

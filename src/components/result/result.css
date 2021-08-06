@@ -1,0 +1,38 @@
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --darkGrayishCyan2: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --lightGrayishCyan2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.result__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.result__value {
+  color: var(--strongCyan);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.result__name {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.result__person {
+  color: var(--darkGrayishCyan);
+}
+
+@media only screen and (max-width: 650px) {
+  .result__container {
+    width: 90%;
+  }
+}

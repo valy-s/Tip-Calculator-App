@@ -1,0 +1,35 @@
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --darkGrayishCyan2: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --lightGrayishCyan2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.custom__button {
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+  margin-top: auto;
+  padding: 0.3rem;
+  background-color: var(--strongCyan);
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  color: var(--veryDarkCyan);
+  font-weight: 700;
+}
+
+.custom__button:hover {
+  cursor: pointer;
+  background-color: var(--lightGrayishCyan);
+}
+
+@media only screen and (max-width: 650px) {
+  .custom__button {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
